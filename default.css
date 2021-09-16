@@ -51,6 +51,7 @@ textarea {
 a {
   text-decoration: none;
   color: #17a2b8;
+  cursor: pointer;
 }
 
 ul {
@@ -324,6 +325,7 @@ h6 {
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   background-color: white;
+  height: max-content;
 }
 
 .thumbnail {
@@ -387,6 +389,18 @@ h6 {
 
 .bold {
   font-weight: 500;
+  color: var(--mainText);
+}
+
+.project-heading {
+  color: var(--mainText);
+}
+
+.unset-link {
+  cursor: unset;
+}
+
+.remove-a-color {
   color: var(--mainText);
 }
 
