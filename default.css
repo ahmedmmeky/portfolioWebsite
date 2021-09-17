@@ -80,7 +80,7 @@ h6 {
 .s1 {
   background-color: var(--mainColor);
   border-bottom: 1px solid var(--borderColor);
-  overflow: auto;
+  overflow: hidden;
 }
 
 .s2 {
@@ -431,5 +431,41 @@ h6 {
 
   .right-column {
     justify-content: center;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nav-wrapper {
+    flex-direction: column;
+  }
+
+  .dots-wrapper {
+    margin-right: 260px;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+
+  #preview-shadow {
+    width: 300px;
+    height: 300px;
+  }
+
+  #preview {
+    width: fit-content;
+    margin-right: 32px;
+  }
+
+  #what-heading {
+    text-align: center;
+  }
+
+  #contact-text {
+    font-size: 32px;
   }
 }
