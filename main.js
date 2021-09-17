@@ -226,19 +226,17 @@ function displayProjectPosts(projects) {
             <p class="post-intro">
               ${project.intro}
             </p>
-             <a href=${project.link} target="blank" ${(onclick = openProject(
-      project.link
-    ))}>View Project</a>
+             <a id=${project.link} onclick="openProject(id)">View Project</a>
           </div>
         </div>
       
 `;
   });
 
-  function openProject(link) {
-    window.open(link, "_blank");
-  }
-
   displayCard = displayCard.join("");
   postWrapper.innerHTML = displayCard;
+}
+
+function openProject(link) {
+  window.open(link, "_blank");
 }
